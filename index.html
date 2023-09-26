@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao CSS Box-Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .section-one {
+            background-color: red;
+            background-image: url("https://www.collinsdictionary.com/images/thumb/tree_267376982_250.jpg?version=4.0.322");
+            background-size: cover;
+            color: red;
+            background-position: center center;
+            border-width: 10px;
+            border-style: solid;
+            border-bottom-color: firebrick;
+            border-top-color:blue;
+            border-left-color: black;
+            border-right-color:yellow;
+            width: 300px;
+            height: 150px;
+            padding: 50px 0 0 0;
+            margin: 20px;
+        }
+        .section-two {
+            background-color: pink;
+            border: 5px solid black;
+            width: 200px;
+            height: 50px;
+            padding: 15px;
+            margin: 20px;
+        }
+        nav {
+            background-color:red;
+            height: auto;
+            display: flex;
+            /*justify-content: center;*/
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+            padding: 10px 20px;
+            display: block;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            background-color: red;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="section-one">
+        Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit.
+        atque!
+    </section>
+    <section class="section-two">02</section>
+    <ul>
+        <li>coffee</li>
+        <li>milk</li>
+        <li>tea</li>
+    </ul>
+    <ol type="I" start="20">
+        <li>car</li>
+        <li>airplane</li>
+        <li>bike</li>
+    </ol>
+    <dl>
+        <dt>Café</dt>
+        <dd>Café é uma bebida escura e quente!</dd>
+        <dt>Chá</dt>
+        <dd>Chá é uma bebida quente de plantas medicinais!</dd>
+    </dl>
+</body>
+</html>
